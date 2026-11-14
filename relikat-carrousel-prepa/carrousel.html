@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:BigS;src:url(/mnt/skills/examples/canvas-design/canvas-fonts/BigShoulders-Bold.ttf)}
+@font-face{font-family:ISerif;src:url(/mnt/skills/examples/canvas-design/canvas-fonts/InstrumentSerif-Italic.ttf)}
+@font-face{font-family:SerifR;src:url(/mnt/skills/examples/canvas-design/canvas-fonts/InstrumentSerif-Regular.ttf)}
+@font-face{font-family:Hand;src:url(/mnt/skills/examples/canvas-design/canvas-fonts/NothingYouCouldDo-Regular.ttf)}
+@font-face{font-family:Sans;src:url(/mnt/skills/examples/canvas-design/canvas-fonts/WorkSans-Regular.ttf)}
+@font-face{font-family:SansB;src:url(/mnt/skills/examples/canvas-design/canvas-fonts/WorkSans-Bold.ttf)}
+:root{--fu:#ff2fa0;--vi:#9b5cff;--ch:#d9d9e3;--bg:#08070a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#222}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;background:
+ radial-gradient(900px 700px at 85% 10%,rgba(155,92,255,.28),transparent 60%),
+ radial-gradient(800px 700px at 0% 100%,rgba(255,47,160,.22),transparent 60%),
+ var(--bg);color:#f3eef7;font-family:Sans;margin-bottom:20px}
+.s::after{content:"";position:absolute;inset:0;pointer-events:none;
+ background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 2px,transparent 2px 5px);
+ box-shadow:inset 0 0 260px 60px rgba(0,0,0,.85)}
+.frame{position:absolute;inset:44px;border:1.5px solid rgba(217,217,227,.28);border-radius:4px}
+.brand{position:absolute;top:78px;left:90px;font-family:SerifR;font-size:40px;letter-spacing:14px;color:var(--ch)}
+.pg{position:absolute;top:84px;right:90px;font-family:BigS;font-size:34px;letter-spacing:4px;color:rgba(243,238,247,.55)}
+.star{position:absolute;color:var(--ch);text-shadow:0 0 18px rgba(255,255,255,.6)}
+.num{position:absolute;right:90px;top:130px;font-family:BigS;font-size:480px;line-height:1;
+ color:transparent;-webkit-text-stroke:3px rgba(255,47,160,.55)}
+.content{position:absolute;left:90px;right:90px;bottom:150px}
+.kicker{font-family:BigS;font-size:40px;letter-spacing:10px;color:var(--fu);text-transform:uppercase;margin-bottom:22px}
+h1{font-family:BigS;font-size:150px;line-height:.9;text-transform:uppercase;letter-spacing:1px}
+h1 em{font-family:ISerif;font-weight:400;font-style:normal;text-transform:none;color:var(--fu);font-size:.85em;letter-spacing:0}
+.txt{font-size:42px;line-height:1.35;margin-top:40px;color:#e6dfee;max-width:880px}
+.txt b{font-family:SansB;color:#fff}
+.hand{font-family:Hand;font-size:48px;color:var(--vi);margin-top:36px;transform:rotate(-2deg)}
+.tag{display:inline-block;margin-top:40px;border:2px solid var(--fu);color:var(--fu);font-family:BigS;
+ font-size:34px;letter-spacing:6px;padding:12px 26px;text-transform:uppercase}
+.swipe{position:absolute;bottom:90px;right:90px;font-family:BigS;font-size:38px;letter-spacing:8px;color:var(--ch)}
+.nail{position:absolute;right:70px;top:170px;width:330px;opacity:.95}
+.list{margin-top:40px;font-size:40px;line-height:1.6;color:#e6dfee}
+.list div::before{content:"✦  ";color:var(--fu)}
+</style></head><body>
+
+<!-- SVG nail reused -->
+<svg width="0" height="0" style="position:absolute"><defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff2fa0"/><stop offset=".55" stop-color="#9b5cff"/><stop offset="1" stop-color="#1a0f2a"/></linearGradient>
+ <linearGradient id="c" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".0"/><stop offset=".5" stop-color="#fff" stop-opacity=".7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <symbol id="stil" viewBox="0 0 200 420"><path d="M20 420 C20 250 40 120 100 0 C160 120 180 250 180 420 Z" fill="url(#g)" stroke="#d9d9e3" stroke-width="3"/><path d="M70 380 C70 260 80 160 100 70" stroke="url(#c)" stroke-width="10" fill="none" stroke-linecap="round"/></symbol>
+</defs></svg>
+
+<!-- 1 COVER -->
+<section class="s" id="s1"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">01/09</div>
+ <span class="star" style="top:230px;left:120px;font-size:60px">✦</span><span class="star" style="top:330px;left:220px;font-size:30px">✦</span>
+ <svg class="nail" viewBox="0 0 440 420" style="width:520px;right:40px;top:150px">
+  <use href="#stil" x="0" y="40" width="130" height="380"/><use href="#stil" x="150" y="0" width="130" height="420"/><use href="#stil" x="300" y="50" width="130" height="370"/></svg>
+ <div class="content"><div class="kicker">Avant de poser tes press on</div>
+ <h1>Prépare<br>tes ongles<br><em>comme une pro</em></h1>
+ <div class="txt">6 étapes pour qu'ils tiennent <b>vraiment</b>.</div></div>
+ <div class="swipe">SWIPE →</div></section>
+
+<!-- 2 POURQUOI -->
+<section class="s" id="s2"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">02/09</div>
+ <span class="star" style="top:250px;right:150px;font-size:80px">✦</span>
+ <div class="content" style="bottom:auto;top:300px"><div class="kicker">La vérité</div>
+ <h1>Un press on<br>qui saute,<br><em>c'est rarement la colle.</em></h1>
+ <div class="txt">C'est presque toujours <b>la prépa</b> : un ongle gras, humide ou brillant, et l'adhésif ne peut pas accrocher.</div>
+ <div class="hand">Alors on prend 5 minutes →</div></div></section>
+
+<!-- STEPS -->
+<section class="s" id="s3"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">03/09</div><div class="num">1</div>
+ <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
+ <div class="content"><div class="kicker">Étape 1</div><h1>Mains propres<br><em>&amp; bien sèches</em></h1>
+ <div class="txt">Lave tes mains, sèche-les à fond. <b>Pas de crème</b> ni d'huile avant la pose, on les garde pour après.</div></div></section>
+
+<section class="s" id="s4"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">04/09</div><div class="num">2</div>
+ <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
+ <div class="content"><div class="kicker">Étape 2</div><h1>Repousse<br><em>tes cuticules</em></h1>
+ <div class="txt">Avec un bâtonnet, tout en douceur. La capsule doit se poser <b>sur l'ongle, jamais sur la peau</b>, sinon elle se soulève.</div></div></section>
+
+<section class="s" id="s5"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">05/09</div><div class="num">3</div>
+ <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
+ <div class="content"><div class="kicker">Étape 3</div><h1>Lime<br><em>court &amp; net</em></h1>
+ <div class="txt">Raccourcis ton ongle naturel et lisse le bord. Il ne doit <b>pas dépasser</b> sous ta capsule.</div></div></section>
+
+<section class="s" id="s6"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">06/09</div><div class="num">4</div>
+ <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
+ <div class="content"><div class="kicker">Étape 4</div><h1>Mate<br><em>la surface</em></h1>
+ <div class="txt">Un petit coup de buffer pour enlever la brillance. <b>Léger</b> : on ne ponce pas l'ongle, on le rend juste mat.</div>
+ <div class="hand">le buffer cœur est dans ton kit ♡</div></div></section>
+
+<section class="s" id="s7"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">07/09</div><div class="num">5</div>
+ <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
+ <div class="content"><div class="kicker">Étape 5</div><h1>Dégraisse<br><em>chaque ongle</em></h1>
+ <div class="txt">Passe la lingette de préparation sur chaque ongle. Ensuite, <b>on ne touche plus</b> : le gras de tes doigts suffit à tout gâcher.</div>
+ <div class="hand">aussi dans ton kit ♡</div></div></section>
+
+<section class="s" id="s8"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">08/09</div><div class="num">6</div>
+ <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
+ <div class="content"><div class="kicker">Étape 6</div><h1>Trouve<br><em>tes tailles</em></h1>
+ <div class="txt">Avant de coller, essaie chaque capsule et aligne-les dans l'ordre. Entre deux tailles ? <b>Prends la plus petite</b> et lime-la si besoin.</div></div></section>
+
+<!-- 9 CTA -->
+<section class="s" id="s9"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">09/09</div>
+ <span class="star" style="top:230px;left:130px;font-size:70px">✦</span><span class="star" style="top:340px;right:180px;font-size:40px">✦</span>
+ <div class="content" style="bottom:auto;top:330px"><div class="kicker">Récap</div>
+ <h1>Prête<br><em>pour la pose.</em></h1>
+ <div class="list"><div>Mains propres &amp; sèches</div><div>Cuticules repoussées</div><div>Ongle limé court</div><div>Surface matée</div><div>Ongle dégraissé</div><div>Tailles choisies</div></div>
+ <div class="tag">Enregistre pour ta prochaine pose</div></div></section>
+</body></html>

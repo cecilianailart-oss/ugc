@@ -36,6 +36,13 @@ h1 em{font-family:ISerif;font-weight:400;font-style:normal;text-transform:none;c
 .nail{position:absolute;right:70px;top:170px;width:330px;opacity:.95}
 .list{margin-top:40px;font-size:40px;line-height:1.6;color:#e6dfee}
 .list div::before{content:"✦  ";color:var(--fu)}
+.bg{position:absolute;inset:0;background-size:cover;filter:saturate(.6) brightness(.8) contrast(1.1)}
+.shade{position:absolute;inset:0;background:
+ linear-gradient(180deg,rgba(8,7,10,.45) 0%,rgba(8,7,10,.1) 28%,rgba(8,7,10,.75) 58%,rgba(8,7,10,.93) 100%),
+ radial-gradient(900px 700px at 85% 10%,rgba(155,92,255,.30),transparent 60%),
+ radial-gradient(800px 700px at 0% 100%,rgba(255,47,160,.25),transparent 60%)}
+.full .shade{background:linear-gradient(180deg,rgba(8,7,10,.45),rgba(8,7,10,.78) 35%,rgba(8,7,10,.88)),
+ radial-gradient(900px 700px at 85% 10%,rgba(155,92,255,.30),transparent 60%)}
 </style></head><body>
 
 <!-- SVG nail reused -->
@@ -46,44 +53,37 @@ h1 em{font-family:ISerif;font-weight:400;font-style:normal;text-transform:none;c
 </defs></svg>
 
 <!-- 1 COVER -->
-<section class="s" id="s1"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">01/08</div>
+<section class="s" id="s1"><div class="bg" style="background-image:url(p-mains-v.png);background-position:center 30%"></div><div class="shade"></div><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">01/08</div>
  <span class="star" style="top:230px;left:120px;font-size:60px">✦</span><span class="star" style="top:330px;left:220px;font-size:30px">✦</span>
- <svg class="nail" viewBox="0 0 440 420" style="width:400px;right:90px;top:130px">
-  <use href="#stil" x="0" y="40" width="130" height="380"/><use href="#stil" x="150" y="0" width="130" height="420"/><use href="#stil" x="300" y="50" width="130" height="370"/></svg>
- <div class="content"><div class="kicker">Tes press on tiennent 2 jours ?</div>
+  <div class="content"><div class="kicker">Tes press on tiennent 2 jours ?</div>
  <h1>Au lieu de<br>2 semaines…<br><em>ce post est pour toi</em></h1>
  <div class="txt">5 étapes de prépa pour qu’ils tiennent <b>vraiment</b>.</div></div>
  <div class="swipe">SWIPE →</div></section>
 
 <!-- 2 POURQUOI -->
-<section class="s" id="s2"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">02/08</div>
+<section class="s full" id="s2"><div class="bg" style="background-image:url(p-mains-h.png);background-position:60% center"></div><div class="shade"></div><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">02/08</div>
  <span class="star" style="top:250px;right:150px;font-size:80px">✦</span>
  <div class="content" style="bottom:auto;top:300px"><div class="kicker">La vérité</div>
  <h1>Un press on<br>qui saute,<br><em>c’est rarement la colle.</em></h1>
  <div class="txt">C’est presque toujours <b>la prépa</b> : un ongle brillant ou gras, et ça ne peut pas accrocher.</div>
  <div class="hand">Alors on prépare →</div></div></section>
-<section class="s" id="s3"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">03/08</div><div class="num">1</div>
- <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
- <div class="content"><div class="kicker">Étape 1</div><h1>Matifie<br><em>tes ongles</em></h1>
+<section class="s" id="s3"><div class="bg" style="background-image:url(p-boite-poste.jpg);background-position:center 20%"></div><div class="shade"></div><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">03/08</div><div class="num">1</div>
+  <div class="content"><div class="kicker">Étape 1</div><h1>Matifie<br><em>tes ongles</em></h1>
  <div class="txt">Tu dois <b>absolument</b> matifier tes ongles avec un buffer. On enlève juste la brillance.</div></div></section>
-<section class="s" id="s4"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">04/08</div><div class="num">2</div>
- <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
- <div class="content"><div class="kicker">Étape 2</div><h1>Repousse<br><em>les cuticules</em></h1>
+<section class="s" id="s4"><div class="bg" style="background-image:url(p-mains-h.png);background-position:78% 70%"></div><div class="shade"></div><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">04/08</div><div class="num">2</div>
+  <div class="content"><div class="kicker">Étape 2</div><h1>Repousse<br><em>les cuticules</em></h1>
  <div class="txt">Avec un bâtonnet, tu viens retirer <b>la peau qui est collée sur ton ongle</b>.</div></div></section>
-<section class="s" id="s5"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">05/08</div><div class="num">3</div>
- <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
- <div class="content"><div class="kicker">Étape 3</div><h1>Nettoie<br><em>la plaque de l’ongle</em></h1>
+<section class="s" id="s5"><div class="bg" style="background-image:url(p-boite.jpg);background-position:center 40%"></div><div class="shade"></div><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">05/08</div><div class="num">3</div>
+  <div class="content"><div class="kicker">Étape 3</div><h1>Nettoie<br><em>la plaque de l’ongle</em></h1>
  <div class="txt">Tu viens prendre une <b>lingette d’alcool</b> et tu la passes sur chaque ongle.</div></div></section>
-<section class="s" id="s6"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">06/08</div><div class="num">4</div>
- <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
- <div class="content"><div class="kicker">Étape 4 · Bonus</div><h1>Lingette<br><em>sous le press on</em></h1>
+<section class="s" id="s6"><div class="bg" style="background-image:url(p-boite-poste.jpg);background-position:center 60%"></div><div class="shade"></div><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">06/08</div><div class="num">4</div>
+  <div class="content"><div class="kicker">Étape 4 · Bonus</div><h1>Lingette<br><em>sous le press on</em></h1>
  <div class="txt">Tu viens passer aussi un petit coup de lingette <b>sous la capsule</b>, pour qu’elle soit propre des deux côtés.</div><div class="hand">le petit détail qui change tout ♡</div></div></section>
-<section class="s" id="s7"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">07/08</div><div class="num">5</div>
- <svg class="nail" viewBox="0 0 200 420" style="width:150px;left:110px;top:210px"><use href="#stil"/></svg>
- <div class="content"><div class="kicker">Étape 5</div><h1>Gel pad<br><em>à ta taille</em></h1>
+<section class="s" id="s7"><div class="bg" style="background-image:url(p-boite.jpg);background-position:center 35%"></div><div class="shade"></div><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">07/08</div><div class="num">5</div>
+  <div class="content"><div class="kicker">Étape 5</div><h1>Gel pad<br><em>à ta taille</em></h1>
  <div class="txt">Tu prends ton gel pad et tu choisis <b>la bonne taille pour ton ongle</b>. Ensuite, place à la pose.</div></div></section>
 <!-- 8 CTA -->
-<section class="s" id="s8"><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">08/08</div>
+<section class="s full" id="s8"><div class="bg" style="background-image:url(p-portrait.png);background-position:center 25%"></div><div class="shade"></div><div class="frame"></div><div class="brand">RELIKAT</div><div class="pg">08/08</div>
  <span class="star" style="top:230px;left:130px;font-size:70px">✦</span><span class="star" style="top:340px;right:180px;font-size:40px">✦</span>
  <div class="content" style="bottom:auto;top:340px"><div class="kicker">Récap</div>
  <h1>Prête<br><em>pour la pose.</em></h1>
